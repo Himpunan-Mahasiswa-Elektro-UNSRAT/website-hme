@@ -5,7 +5,7 @@ export default function Register() {
       <div className="flex flex-row min-h-screen">
         <div className="w-[583px] bg-[#043188] text-[#FFFFFF] place-content-center">  
 
-            <div className="flex flex-row h-[48px] pl-[50px] pt-[20px] absolute top-0 m-4">
+            <div className="flex flex-row h-[48px] pl-[55px] pt-[40px] absolute top-0 m-4">
                 <div className="">
                     <Image
                         src="/himpunan-logo-bgputih.png"
@@ -36,7 +36,7 @@ export default function Register() {
         
         </div>
 
-        <div className="flex-grow bg-[#F8F5F2] place-content-center justify-items-center py-[78px]">
+        <div className="flex-grow bg-[#F8F5F2] place-content-center justify-items-center py-[90px]">
             <div className="flex flex-col items-center">
                 <h1 className="font-bold text-[36px] text-[#043188]">
                     Create Account
