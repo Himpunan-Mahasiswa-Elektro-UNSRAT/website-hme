@@ -8,7 +8,7 @@ export default function Register() {
             <div className="flex flex-row h-[48px] pl-[55px] pt-[40px] absolute top-0 m-4">
                 <div className="">
                     <Image
-                        src="/himpunan-logo-bgputih.png"
+                        src="/logo-hme-fix.png"
                         width={48}
                         height={48}
                         alt="logo himpunan mahasiswa elektro"
