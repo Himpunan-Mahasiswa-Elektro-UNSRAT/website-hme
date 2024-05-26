@@ -3,6 +3,7 @@
 import { useState, FormEvent } from "react";
 import Link from "next/link";
 
+
 export default function LoginPage() {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
@@ -43,19 +44,15 @@ export default function LoginPage() {
     <main className="flex flex-col lg:flex-row min-h-screen">
 {/* Left side: Login form */}
 <div className="flex items-center w-full lg:w-4/19 p-8 lg:p-28 bg-white relative">
-  <div className="absolute top-0 left-0 m-4 lg:m-8 w-28">
-    <img src="https://fatek.unsrat.ac.id/informatika/wp-content/uploads/2020/08/Screen-Shot-2020-08-02-at-06.39.07.png" alt="Logo" className="w-full"/>
-  </div>
-  <div className="absolute top-14 left-10 lg:left-36">
-    <h1 className="text-lg font-bold text-blue-900">HME FT UNSRAT</h1>
-    <p className="text-md text-blue-900">Himpunan Mahasiswa Elektro</p>
-  </div>
- <div className="w-full max-w-md p-12 bg-white shadow-md rounded-lg mx-auto">
-  <h2 className="text-4xl font-bold text-center text-blue-900 mb-10">Login</h2>
-  <p className="text-5x1 text-center text-sm text-gray-800 mb-6"> Selamat datang kembali, Elek-Elik!</p>
-  <form onSubmit={handleSubmit} className="space-y-6">
+  <div className="absolute top-0 left-0 m-4 lg:m-8 w-32">
+    <img src="/logo-hme-fix.png" alt="Logo" className="w-full"/>
+    </div>
+ <div className="w-full max-w-md p-10 bg-white shadow-md rounded-lg mx-auto">
+  <h2 className="text-4xl font-bold text-center text-blue-900 mb-5">Login</h2>
+  <p className="text-2x4 text-center text-gray-800 mb-5">Selamat datang kembali, Elek-Elik!</p>
+  <form onSubmit={handleSubmit} className="space-y-5">
     <div>
-      <label htmlFor="username" className="block text-blue-700 text-sm font-bold mb-2">
+    <label htmlFor="username" className="block text-black-600 text-sm font-bold mb-2 py-2">
         Email
       </label>
       <input
@@ -63,11 +60,11 @@ export default function LoginPage() {
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        className="shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
       />
     </div>
     <div>
-      <label htmlFor="password" className="block text-blue-700 text-sm font-bold mb-2">
+      <label htmlFor="password" className="block text-black-700 text-sm font-bold mb-2">
         Password
       </label>
       <input
@@ -75,12 +72,12 @@ export default function LoginPage() {
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        className="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
       />
     </div>
     {error && <p className="text-red-500 text-xs italic">{error}</p>}
     <div className="text-1xl flex items-center justify-center">
-      <button className="bg-blue-900 text-white font-bold py-4 px-14 rounded-full focus:outline-none border border-white hover:bg-gray-200" type="submit">
+      <button className="bg-blue-900 text-white font-bold py-4 px-10 rounded-full focus:outline-none border border-white hover:bg-gray-200" type="submit">
         Login
       </button>
     </div>
