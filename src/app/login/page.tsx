@@ -52,7 +52,7 @@ export default function LoginPage() {
   <p className="text-2x4 text-center text-gray-800 mb-5">Selamat datang kembali, Elek-Elik!</p>
   <form onSubmit={handleSubmit} className="space-y-5">
     <div>
-    <label htmlFor="username" className="block text-black-600 text-sm font-bold mb-2 py-2">
+    <label htmlFor="username" className="block text-black text-sm font-bold py-2">
         Email
       </label>
       <input
@@ -64,7 +64,7 @@ export default function LoginPage() {
       />
     </div>
     <div>
-      <label htmlFor="password" className="block text-black-700 text-sm font-bold mb-2">
+      <label htmlFor="password" className="block text-black text-sm font-bold py-2">
         Password
       </label>
       <input
