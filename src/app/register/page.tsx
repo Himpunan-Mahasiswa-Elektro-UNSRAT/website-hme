@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Register() {
     return (
       <div className="flex flex-row min-h-screen">
-        <div className="w-[583px] bg-[#043188] text-[#FFFFFF] place-content-center">  
+        <div className="w-[500px] bg-[#043188] text-[#FFFFFF] place-content-center">  
 
             <div className="flex flex-row h-[48px] pl-[55px] pt-[40px] absolute top-0 m-4">
                 <div className="">
@@ -36,78 +36,68 @@ export default function Register() {
         
         </div>
 
-        <div className="flex-grow bg-[#F8F5F2] place-content-center justify-items-center py-[90px]">
+        <div className="flex-grow bg-[#F8F5F2] place-content-center justify-items-center py-[70px]">
             <div className="flex flex-col items-center">
                 <h1 className="font-bold text-[36px] text-[#043188]">
                     Create Account
                 </h1>
-                <p className="w-[563px] text-center py-[30px]">
+                <p className="w-[563px] text-center py-[30px] text-[#000000]">
                     Selamat datang Elek-Elik, daftarkan diri dan jadi bagian dari Himpunan Mahasiswa Elektro FT-UNSRAT!
                 </p>
 
-                
                 <form className="flex flex-col items-center">
-                    <div className="flex flex-col my-[10px]">
-                        <div className="w-[473px] h-[72px] bg-[#E7E7E7] rounded-[9px] px-[27px] pt-[16px]">
-                            <div className="text-[13px] text-[#999999]">
-                                <p>NAMA LENGKAP</p>
-                            </div>
-                            <div>
-                                <input className="text-[16px] text-[#000000] bg-[#E7E7E7] font-semibold w-full outline-none"></input>
-                            </div>
-                        </div>
+                    <div className="w-[400px]">
+                        <label className="block text-black text-sm font-bold py-2 text-[#043188]">
+                            Nama Lengkap
+                        </label>
+                        <input id="username"
+                                type="text"
+                                className="h-[40px] shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </input>
                     </div>
 
-                    <div className="flex flex-col my-[7px]">
-                        <div className="w-[473px] h-[72px] bg-[#E7E7E7] rounded-[9px] px-[27px] pt-[16px]">
-                            <div className="text-[13px] text-[#999999]">
-                                <p>NIM</p>
-                            </div>
-                            <div>
-                                <input className="text-[16px] text-[#000000] bg-[#E7E7E7] font-semibold w-full outline-none"></input>
-                            </div>
-                        </div>
+                    <div className="w-[400px]">
+                        <label className="block text-black text-sm font-bold py-2 text-[#043188]">
+                            NIM
+                        </label>
+                        <input id="username"
+                                type="text"
+                                className="h-[40px] shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </input>
+                    </div>
+                    
+                    <div className="w-[400px]">
+                        <label className="block text-black text-sm font-bold py-2 text-[#043188]">
+                            Email
+                        </label>
+                        <input id="username"
+                                type="text"
+                                className="h-[40px] shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </input>
                     </div>
 
-                    <div className="flex flex-col my-[7px]">
-                        <div className="w-[473px] h-[72px] bg-[#E7E7E7] rounded-[9px] px-[27px] pt-[16px]">
-                            <div className="text-[13px] text-[#999999]">
-                                <p>EMAIL</p>
-                            </div>
-                            <div>
-                                <input className="text-[16px] text-[#000000] bg-[#E7E7E7] font-semibold w-full outline-none"></input>
-                            </div>
-                        </div>
+                    <div className="w-[400px]">
+                        <label className="block text-black text-sm font-bold py-2 text-[#043188]">
+                            Password
+                        </label>
+                        <input id="username"
+                                type="text"
+                                className="h-[40px] shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </input>
                     </div>
 
-                    <div className="flex flex-col my-[7px]">
-                        <div className="w-[473px] h-[72px] bg-[#E7E7E7] rounded-[9px] px-[27px] pt-[16px]">
-                            <div className="text-[13px] text-[#999999]">
-                                <p>PASSWORD</p>
-                            </div>
-                            <div>
-                                <input type="password" className="text-[16px] text-[#000000] bg-[#E7E7E7] font-semibold w-full outline-none"></input>
-                            </div>
-                        </div>
+                    <div className="w-[400px]">
+                        <label className="block text-black text-sm font-bold py-2 text-[#043188]">
+                            Konfirmasi Password
+                        </label>
+                        <input id="username"
+                                type="text"
+                                className="h-[40px] shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        </input>
                     </div>
-
-                    <div className="flex flex-col my-[7px]">
-                        <div className="w-[473px] h-[72px] bg-[#E7E7E7] rounded-[9px] px-[27px] pt-[16px] ">
-                            <div className="text-[13px] text-[#999999]">
-                                <p>KONFIRMASI PASSWORD</p>
-                            </div>
-                            <div>
-                                <input type="password" className="text-[16px] text-[#000000] bg-[#E7E7E7] font-semibold w-full outline-none"></input>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="py-[40px] mx-auto">
-                        <button className="border border-white text-white px-[54px] h-[52px] rounded-[24px] bg-[#043188] font-bold text text-[15px]">
-                            SUBMIT
-                        </button>
-                    </div>
+                    
                 </form>
+
             </div>    
         </div>    
       </div>
