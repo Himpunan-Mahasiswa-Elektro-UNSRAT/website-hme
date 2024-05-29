@@ -97,6 +97,11 @@ export default function Register() {
                         </input>
                     </div>
 
+                    <div className="py-[40px] mx-auto">
+                        <button className="border border-white text-white px-[54px] h-[52px] rounded-[24px] bg-[#043188] font-bold text text-[15px]">
+                            SUBMIT
+                        </button>
+                    </div>
                     
                 </form>
 
