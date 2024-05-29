@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 export default function Register() {
     return (
+    
       <div className="flex flex-row min-h-screen">
         <div className="w-[500px] bg-[#043188] text-[#FFFFFF] place-content-center">  
 
@@ -81,7 +82,7 @@ export default function Register() {
                             Password
                         </label>
                         <input id="username"
-                                type="text"
+                                type="password"
                                 className="h-[40px] shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                         </input>
                     </div>
@@ -91,10 +92,11 @@ export default function Register() {
                             Konfirmasi Password
                         </label>
                         <input id="username"
-                                type="text"
+                                type="password"
                                 className="h-[40px] shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                         </input>
                     </div>
+
                     
                 </form>
 
