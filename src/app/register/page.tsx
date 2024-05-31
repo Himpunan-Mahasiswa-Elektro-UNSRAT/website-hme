@@ -1,6 +1,9 @@
+"use client"
 import Image from 'next/image';
+import { useState, FormEvent } from "react";
 
 export default function Register() {
+
     return (
     
       <div className="flex flex-row min-h-screen">
@@ -90,11 +93,17 @@ export default function Register() {
                     <div className="w-[400px]">
                         <label className="block text-black text-sm font-bold py-2 text-[#043188]">
                             Konfirmasi Password
-                        </label>
-                        <input id="username"
+                        </label> 
+                        <div className="flex flex-row">
+                            <input id="username"
                                 type="password"
                                 className="h-[40px] shadow appearance-none border rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </input>
+                            </input>
+                            <button>
+                                tes
+                            </button>
+                        </div>
+
                     </div>
 
                     <div className="py-[40px] mx-auto">
